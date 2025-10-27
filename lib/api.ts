@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  process.env.NODE_ENV === "production" ? "https://your-production-api.com/api" : "https://studyapi.vgit.cn/api"
+  process.env.NODE_ENV === "production" ? "https://studyapi.vgit.cn/api" : "https://studyapi.vgit.cn/api"
 
 export interface School {
   id: number
