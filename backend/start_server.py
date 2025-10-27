@@ -16,7 +16,7 @@ def start_server():
     """启动API服务器"""
     try:
         print("🚀 启动Study in China API服务器...")
-        print("📍 服务器地址: http://studyapi.vgit.cn")
+        print("📍 服务器地址: https://studyapi.vgit.cn")
         print("📋 可用API端点:")
         print("   GET /api/schools - 获取学校列表")
         print("   GET /api/schools/{id} - 获取学校详情")

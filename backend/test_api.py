@@ -8,7 +8,7 @@ import requests
 import json
 import sys
 
-API_BASE_URL = "http://studyapi.vgit.cn/api"
+API_BASE_URL = "https://studyapi.vgit.cn/api"
 
 def test_endpoint(endpoint, description):
     """Test a single API endpoint"""

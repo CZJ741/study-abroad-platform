@@ -34,7 +34,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Label } from "@/components/ui/label"
 
 // 模拟的课程数据结构
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://studyapi.vgit.cn';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://studyapi.vgit.cn';
 
 // 定义课程数据类型
 export default function CourseProfilePage() {

@@ -66,13 +66,13 @@ python server.py
 ## 5. 验证API
 
 访问以下URL验证API是否正常工作：
-- http://studyapi.vgit.cn/api/health
-- http://studyapi.vgit.cn/api/schools
-- http://studyapi.vgit.cn/api/destinations
+- https://studyapi.vgit.cn/api/health
+- https://studyapi.vgit.cn/api/schools
+- https://studyapi.vgit.cn/api/destinations
 
 ## 6. 前端连接
 
-确保前端运行在 http://studyapi.vgit.cn，然后：
+确保前端运行在 https://studyapi.vgit.cn，然后：
 \`\`\`bash
 npm run dev
 \`\`\`
@@ -87,7 +87,7 @@ npm run dev
    - 确认数据库已创建
 
 2. **CORS错误**
-   - 确保前端运行在 http://studyapi.vgit.cn
+   - 确保前端运行在 https://studyapi.vgit.cn
    - 检查服务器CORS配置
 
 3. **端口占用**

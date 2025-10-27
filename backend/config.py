@@ -11,5 +11,5 @@ DB_CONFIG = {
 SERVER_CONFIG = {
     'host': 'localhost',
     'port': 8000,
-    'cors_origin': 'http://studyapi.vgit.cn'
+    'cors_origin': 'https://studyapi.vgit.cn'
 }

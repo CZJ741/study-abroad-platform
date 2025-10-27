@@ -16,7 +16,7 @@ import { useAuth } from "@/components/auth-provider"
 import { useRouter } from "next/navigation"
 
 // API base URL from environment
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://studyapi.vgit.cn';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://studyapi.vgit.cn';
 
 // Subjects, countries, levels (these can be fetched dynamically if needed)
 const subjects = ["All Subjects", "Business", "Computer Science", "Engineering", "Medicine", "Finance", "Data Science"]

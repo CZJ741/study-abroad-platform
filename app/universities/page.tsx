@@ -206,7 +206,7 @@ export default function UniversitiesPage() {
             <div className="flex items-center gap-2">
               <Database className="h-4 w-4 text-yellow-600" />
               <p className="text-sm text-yellow-800">
-                <strong>注意：</strong> 当前显示的是演示数据。请确保Python后端服务器正在运行在 http://studyapi.vgit.cn
+                <strong>注意：</strong> 当前显示的是演示数据。请确保Python后端服务器正在运行在 https://studyapi.vgit.cn
               </p>
             </div>
           </div>

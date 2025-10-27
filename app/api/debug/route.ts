@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   try {
-    const res = await fetch('http://studyapi.vgit.cn/health', {
+    const res = await fetch('https://studyapi.vgit.cn/health', {
       // 重要：超时设短一点，方便快速报错
       signal: AbortSignal.timeout(5000),
     });

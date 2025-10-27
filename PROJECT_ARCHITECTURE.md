@@ -33,7 +33,7 @@ Study-in-China/
 - `other_fees` - 其他费用
 
 ### 2. 后端API层 (Python)
-- **端点**: `http://studyapi.vgit.cn/api/`
+- **端点**: `https://studyapi.vgit.cn/api/`
 - **主要API**:
   - `GET /api/schools` - 获取学校列表（支持搜索、过滤、分页）
   - `GET /api/schools/{id}` - 获取学校详情
@@ -56,12 +56,12 @@ Study-in-China/
 
 ### 开发环境启动
 1. **后端服务器**: `cd backend && python3 server.py`
-   - 启动在 `http://studyapi.vgit.cn`
+   - 启动在 `https://studyapi.vgit.cn`
    - 连接 MySQL 数据库
    - 提供 RESTful API
 
 2. **前端服务器**: `npm run dev`
-   - 启动在 `http://studyapi.vgit.cn`
+   - 启动在 `https://studyapi.vgit.cn`
    - 调用后端API获取数据
    - 热重载开发模式
 

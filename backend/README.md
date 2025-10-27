@@ -26,7 +26,7 @@ python start_server.py
 \`\`\`
 
 ### 3. 测试API
-访问 http://studyapi.vgit.cn/api/schools 测试API是否正常工作
+访问 https://studyapi.vgit.cn/api/schools 测试API是否正常工作
 
 ## API端点
 
@@ -41,4 +41,4 @@ python start_server.py
 ## 前端集成
 确保前端项目中的 `lib/api.ts` 文件中的 `API_BASE_URL` 指向正确的后端地址:
 \`\`\`typescript
-const API_BASE_URL = 'http://studyapi.vgit.cn/api'
+const API_BASE_URL = 'https://studyapi.vgit.cn/api'

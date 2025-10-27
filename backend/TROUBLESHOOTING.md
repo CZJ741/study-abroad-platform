@@ -24,10 +24,10 @@ python test_api.py
    cd backend
    python start_server.py
    \`\`\`
-   You should see: "Server starting..." and "Address: http://studyapi.vgit.cn"
+   You should see: "Server starting..." and "Address: https://studyapi.vgit.cn"
 
 2. **Verify server is accessible:**
-   Open http://studyapi.vgit.cn/api/health in your browser
+   Open https://studyapi.vgit.cn/api/health in your browser
    Should return: `{"status": "ok", "message": "API server is running normally"}`
 
 ### 2. Database Connection Errors
@@ -76,7 +76,7 @@ python test_api.py
 - Network tab shows preflight request failures
 
 **Solutions:**
-- ✅ **Already configured** - Server allows requests from http://studyapi.vgit.cn
+- ✅ **Already configured** - Server allows requests from https://studyapi.vgit.cn
 - Make sure frontend is running on port 3000: `npm run dev`
 
 ### 5. Empty Database

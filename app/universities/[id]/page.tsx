@@ -287,7 +287,7 @@ export default function UniversityProfilePage() {
   const [reviewFilter, setReviewFilter] = useState("all")
 
   // 从环境变量获取后端 API 地址  http1://localhost:3000  http1://studyapi.vgit.cn
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://studyapi.vgit.cn'
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://studyapi.vgit.cn'
 
 useEffect(() => {
   const fetchUniversity = async () => {
