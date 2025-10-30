@@ -36,6 +36,9 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link href="/about" className="text-gray-700 hover:text-cyan-600 transition-colors">
+              About us
+            </Link>
             <Link href="/courses" className="text-gray-700 hover:text-cyan-600 transition-colors">
               Courses
             </Link>
@@ -45,9 +48,9 @@ export function Navigation() {
             <Link href="/scholarships" className="text-gray-700 hover:text-cyan-600 transition-colors">
               Scholarships
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-cyan-600 transition-colors">
+            {/* <Link href="/services" className="text-gray-700 hover:text-cyan-600 transition-colors">
               Services
-            </Link>
+            </Link> */}
             <Link href="/compare" className="text-gray-700 hover:text-cyan-600 transition-colors">
               Compare ({user?.comparedCourses?.length || 0})
             </Link>

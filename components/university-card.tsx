@@ -116,7 +116,7 @@ export function UniversityCard({ university, onSave, onViewCourses, onViewDetail
               <div className="text-lg font-bold text-primary">
                 {university.averageFees.currency} ${university.averageFees.undergraduate.toLocaleString()}
               </div>
-              <p className="text-xs text-muted-foreground">avg. undergraduate fees</p>
+              <p className="text-xs text-muted-foreground">avg fees</p>
             </div>
 
             <div className="space-y-2">

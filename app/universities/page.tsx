@@ -29,6 +29,35 @@ const subjects = [
   "Economics",
   "International Relations",
 ]
+
+// 任意字符串 → 数字平均 → 兜底 3 万
+function avgFee(
+  feeStr1: string | undefined | null,
+  feeStr2?: string | undefined | null
+): number {
+  // 1. 拼接：单段就原样，两段就 "xxx to yyy"
+  const combined = feeStr2
+    ? `${feeStr1} to ${feeStr2}`
+    : (feeStr1 ?? '');
+
+  // 2. 空值兜底
+  if (!combined) return 30_000;
+
+  // 3. 抓数字
+  const nums = combined.match(/\d{1,3}(?:,\d{3})*/g);
+  if (!nums) return 30_000;
+
+  // 4. 去逗号 → 数字
+  const values = nums.map(n => Number(n.replace(/,/g, '')));
+
+  // 5. 脏数据过滤
+  if (values.some(v => v > 1_000_000)) return 30_000;
+
+  // 6. 首尾平均
+  const min = values[0];
+  const max = values[values.length - 1];
+  return Math.round((min + max) / 2);
+}
 // 定义学校类型
 export default function UniversitiesPage() {
   const router = useRouter()
@@ -91,9 +120,9 @@ export default function UniversitiesPage() {
         totalStudents: Math.floor(Math.random() * 50000) + 10000,
         internationalStudents: Math.floor(Math.random() * 20) + 5,
         acceptanceRate: Math.floor(Math.random() * 10) + 1,
+
         averageFees: {
-          undergraduate: Number.parseInt(school.min_tuition?.replace(/[^\d]/g, "") || "25000"),
-          postgraduate: Number.parseInt(school.max_tuition?.replace(/[^\d]/g, "") || "30000"),
+          undergraduate: avgFee(school.min_tuition, school.max_tuition), // 统一拿平均学费
           currency: "CNY",
         },
         popularSubjects: school.available_levels?.split(",") || ["Engineering", "Business"],

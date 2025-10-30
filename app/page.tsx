@@ -7,6 +7,7 @@ import { Award, Globe, Heart, MapPin, Star, Users } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { Badge } from "@/components/ui/badge"
 
+
 const mockSchools = [
   {
     id: 1,
@@ -122,9 +123,10 @@ export default function HomePage() {
   }
 
   return (
+    
     <div className="min-h-screen bg-background animate-fade-in">
       <Navigation />
-
+      {/* // 头图部分 */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -144,7 +146,8 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
-
+          
+      {/* // 虚拟校园导览 */}
       <section className="py-16 bg-muted/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold font-serif mb-8">Virtual Campus Tour</h2>
@@ -160,7 +163,7 @@ export default function HomePage() {
           <p className="mt-4 text-muted-foreground">Take a virtual tour of Beijing University campus</p>
         </div>
       </section>
-
+      {/* // 优势展示部分 */}
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold font-serif text-center mb-12">Why Study in China?</h2>
@@ -191,7 +194,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      {/* 国际学生展示部分 */}
       <section className="py-16 bg-gradient-to-r from-primary/5 to-secondary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -237,6 +240,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 静态学校信息 */}
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -323,7 +327,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      {/* 热门目的地部分 */}
       <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
@@ -372,7 +376,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      {/* 奖学金部分 */}
       <section className="py-16 bg-gradient-to-r from-secondary/10 to-primary/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <h2 className="text-3xl font-bold font-serif">Discover scholarships</h2>
@@ -385,7 +389,7 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
-
+      {/* 页脚部分 */}
       <footer className="bg-foreground text-background py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
@@ -447,5 +451,6 @@ export default function HomePage() {
         </div>
       </footer>
     </div>
+    
   )
 }
