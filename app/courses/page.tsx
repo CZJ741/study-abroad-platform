@@ -14,6 +14,7 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import { CourseCard } from "@/components/course-card"
 import { useAuth } from "@/components/auth-provider"
 import { useRouter } from "next/navigation"
+import Link from "next/link"
 
 // API base URL from environment
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://studyapi.vgit.cn';
@@ -144,8 +145,9 @@ export default function CoursesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
-              <Globe className="h-8 w-8 text-primary" />
-              <span className="font-bold text-xl font-serif">StudyAbroad</span>
+              <Link href="/">
+                <img src="/logo.png" alt="Study in China Logo" className="h-8 w-auto" />
+              </Link>
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
